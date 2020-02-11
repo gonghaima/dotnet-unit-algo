@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Prime.Services
 {
-    public class PrimeService
+    public partial class PrimeService
     {
         public int hurdleRace(int k, int[] height)
         {
