@@ -4,12 +4,8 @@ namespace Prime.Services
 {
     public class PrimeService
     {
-        public bool IsPrime(int candidate)
+        public bool hurdleRace(int k, int[] height)
         {
-            if (candidate < 2)
-            {
-                return false;
-            }
             throw new NotImplementedException("Not fully implemented.");
         }
     }
