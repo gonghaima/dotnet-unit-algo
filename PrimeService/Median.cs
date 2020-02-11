@@ -5,9 +5,9 @@ namespace Prime.Services
 {
     public partial class PrimeService
     {
-        public int runningMedian(int k, int[] height)
+        public double[] runningMedian(int[] a)
         {
-            return 100;
+            return new double[] { };
         }
     }
 }

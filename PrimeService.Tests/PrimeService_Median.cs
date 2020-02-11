@@ -13,11 +13,11 @@ namespace Prime.UnitTests.Services
         }
 
         [Fact]
-        public void hurdleRace_over_Return2()
+        public void median_return_correct_result()
         {
-            var result = _primeService.runningMedian(4, new int[] { 1, 6, 3, 5, 2 });
+            var result = _primeService.runningMedian(new int[] { 6, 12, 4, 5, 3, 8, 7 });
 
-            Assert.Equal(result, 100);
+            Assert.Equal(result, new double[] { 12.0, 8.0, 5.0, 4.5, 5.0, 6.0 });
         }
     }
 }
