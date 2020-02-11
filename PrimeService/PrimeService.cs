@@ -1,12 +1,16 @@
 ﻿using System;
+using System.Linq;
 
 namespace Prime.Services
 {
     public class PrimeService
     {
-        public bool hurdleRace(int k, int[] height)
+        public int hurdleRace(int k, int[] height)
         {
-            throw new NotImplementedException("Not fully implemented.");
+            var requiredJumpLevel = height.Max();
+            var gap = requiredJumpLevel - k;
+            if (gap > 0) return gap;
+            return 0;
         }
     }
 }

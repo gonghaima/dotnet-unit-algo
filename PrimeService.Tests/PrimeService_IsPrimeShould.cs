@@ -13,22 +13,19 @@ namespace Prime.UnitTests.Services
         }
 
         [Fact]
-        public void IsPrime_InputIs1_ReturnFalse()
+        public void hurdleRace_over_Return2()
         {
-            var result = _primeService.hurdleRace(1, new int[] { });
+            var result = _primeService.hurdleRace(4, new int[] { 1, 6, 3, 5, 2 });
 
-            Assert.False(result, "1 should not be prime");
+            Assert.Equal(result, 2);
         }
 
-        // [Theory]
-        // [InlineData(-1)]
-        // [InlineData(0)]
-        // [InlineData(1)]
-        // public void IsPrime_ValuesLessThan2_ReturnFalse(int value)
-        // {
-        //     var result = _primeService.IsPrime(value);
+        [Fact]
+        public void hurdleRace_below_Return0()
+        {
+            var result = _primeService.hurdleRace(7, new int[] { 2, 5, 4, 5, 2 });
 
-        //     Assert.False(result, $"{value} should not be prime");
-        // }
+            Assert.Equal(result, 0);
+        }
     }
 }
