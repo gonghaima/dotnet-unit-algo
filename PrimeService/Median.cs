@@ -22,7 +22,7 @@ namespace Prime.Services
                 {
                     sorted.Add(a[counter]);
                     sorted.Sort();
-                    result[counter] = Convert.ToDouble((a[0] + a[1]) / 2);
+                    result[counter] = Convert.ToDouble(((double)a[0] + (double)a[1]) / 2);
                 }
                 else
                 {
@@ -32,7 +32,6 @@ namespace Prime.Services
                     if (sorted.Count() % 2 == 0)
                     {
                         int int_idx = Convert.ToInt32(idx);
-                        // result[counter] = Convert.ToDouble((sorted[int_idx - 1] + sorted[int_idx]) / 2);
                         var t = (Convert.ToDecimal((sorted.ElementAt(int_idx - 1) + sorted.ElementAt(int_idx)) / 2));
                         result[counter] = Convert.ToDouble(t);
                     }
